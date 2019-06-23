@@ -12,7 +12,7 @@ while True:
         print("猜中")
         break
     elif num > r:
-        print("請猜比答案大")
+        print("請猜比答案小")
     elif num < r :
-        print("請猜比答案小" )
+        print("請猜比答案大" )
     print("這是你猜的第", count, "次")

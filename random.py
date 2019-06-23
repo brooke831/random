@@ -1,14 +1,18 @@
-import random 
-r = random.randint(1,100)
+import random
+
+start = int(input("請輸入起始值:"))
+end = int(input("請輸入結束值:"))
+ 
+r = random.randint(start , end )
 count = 0
 while True:
     count += 1
-    num = int(input("請輸入號碼:"))
+    num = int(input("請猜猜看隨機數字:"))
     if num == r :
         print("猜中")
         break
     elif num > r:
-        print("比答案大")
+        print("請猜比答案大")
     elif num < r :
-        print("比答案小" )
+        print("請猜比答案小" )
     print("這是你猜的第", count, "次")
